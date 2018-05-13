@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Final Countdown</title>
+	<link rel="stylesheet" href="countdown2.css">
+</head>
+<body>
+	<table class="container">
+		<tr>
+			<td colspan="4" id="title"> Compte a rebours</td>
+		</tr>
+		<tr>
+			<td id="j"></td>
+			<td id="h"></td>
+			<td id="m"></td>
+			<td id="s">
+	
+			</td>
+		</tr>
+		<tr class="small">
+			<td> Jours </td>
+			<td> Heures </td>
+			<td> Minutes </td>
+			<td> Secondes </td>
+		</tr>
+		<tr class="Cre">
+			<td class="date"> </td>
+		</tr>
+		<td colspan="4">
+			<input type="button" value="Start" onclick="startC()">
+			<input type="button" value="Stop" onclick="stopC()" id="stop2">
+			<input type="button" value="Reset" onclick="reset()" id="reset">
+		</td>
+	</table>	
+	<div id="text"><form name="jor">
+  		<label for="jourform">Veuillez choisir les Jours.</label>
+  		<input type="number" name="startjour" min="0" max="99" size="2" step="1" value="0">
+  	</form>
+  	<form name="her">
+  		<label for="heureform">Veuillez choisir les heures.</label>
+  		<input type="number" name="startheur" min="0" max="23" size="2" step="1" value="0">
+  	</form>
+  	<form name="mint">
+  		<label for="minform">Veuillez choisir les minutes.</label>
+  		<input type="number" name="startmin" min="0" max="59" size="2" step="1" value="0">
+  	</form>
+  	<form name="secd">
+  		<label for="secform">Veuillez choisir les secondes.</label>
+  		<input type="number" name="startsec" min="0" max="59" size="2" step="1" value="0">
+  	</form>
+	</div>
+<script type="text/javascript" src="countdown2.js"></script>
+</body>
+</html>
